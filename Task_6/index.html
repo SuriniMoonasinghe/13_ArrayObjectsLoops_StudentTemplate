@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rask 6 - Takeaway Task</title>
+  </head>
+  <body>
+    <script>
+      // Expand on this so that you can enter new fruit and quantity through and input
+      // Plus us logic to see if fruit is already there.
+      const arrFruitPerDay = [
+        { fruit: 'apple', quantity: 2 },
+        { fruit: 'pear', quantity: 1 },
+      ];
+
+      for (let i = 0; i < arrFruitPerDay.length; i++) {
+        arrFruitPerDay[i].quantity += 1;
+      }
+
+      console.log(arrFruitPerDay);
+
+      alert(`I have eaten ${arrFruitPerDay[0].quantity} ${arrFruitPerDay[0].fruit}s today.`);
+    </script>
+  </body>
+</html>
