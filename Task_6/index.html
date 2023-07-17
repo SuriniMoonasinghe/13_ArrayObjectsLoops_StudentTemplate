@@ -7,20 +7,39 @@
   </head>
   <body>
     <script>
-      // Expand on this so that you can enter new fruit and quantity through and input
-      // Plus us logic to see if fruit is already there.
+      // Think how you could expand on this idea i.e. delete items, add more than one fruit, etc....
       const arrFruitPerDay = [
         { fruit: 'apple', quantity: 2 },
         { fruit: 'pear', quantity: 1 },
       ];
 
-      for (let i = 0; i < arrFruitPerDay.length; i++) {
-        arrFruitPerDay[i].quantity += 1;
+      let totalFruits = 0, totalQTY = 0
+      const fruit = prompt("Please enter fruit?");
+      const qty = +prompt("Please enter quantity eaten?");
+      console.log(fruit, qty);
+
+      if (arrFruitPerDay.some(f => f.fruit.toLowerCase() === fruit.toLowerCase())) {
+        arrFruitPerDay.map((f) => {
+          if (f.fruit.toLowerCase() === fruit.toLowerCase()) {
+            f.quantity += qty
+          }
+          return f
+        })
+      } else {
+        arrFruitPerDay.push(
+          { fruit: fruit, quantity: qty }
+        )
       }
 
-      console.log(arrFruitPerDay);
+      console.log(arrFruitPerDay)
 
-      alert(`I have eaten ${arrFruitPerDay[0].quantity} ${arrFruitPerDay[0].fruit}s today.`);
+      for (let i = 0; i < arrFruitPerDay.length; i++) {
+        totalQTY += +arrFruitPerDay[i].quantity;
+      }
+
+      totalFruits = arrFruitPerDay.length
+
+      alert(`I have eaten ${totalFruits} types of fruit with a total quantity of ${totalQTY} today.`);
     </script>
   </body>
 </html>
