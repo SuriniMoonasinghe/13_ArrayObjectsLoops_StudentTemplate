@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
-    <title>Rask 6 - Takeaway Task</title>
+    <title>Task 6 - Takeaway Task</title>
   </head>
   <body>
+    <h1>Suggested idea from TCG to work on:</h1>
+    <p>Sometimes it's easier to understand a concept with your own context imposed on it.</p>
+    <p>So make us some data, loop over it and output it in the console.</p>
+    <p>Add a function to add or remove data from your array.</p>
+    <p>Bonus points for implementing a front end to go with it - ie - can you give us a button and click on it to add data to your list? Or remove it? Then show it to the screen!</p>
     <script>
-      // Think how you could expand on this idea i.e. delete items, add more than one fruit, etc....
+      // Example idea I came up to demostrate implementing these ideas:
+      // Look through the code see if you can understand what it is doing and then think how you can create your own app.
       const arrFruitPerDay = [
         { fruit: 'apple', quantity: 2 },
         { fruit: 'pear', quantity: 1 },
@@ -19,7 +25,9 @@
       const qty = +prompt("Please enter quantity eaten?");
       console.log(fruit, qty);
 
+      // Checks to see if the fruit already exists
       if (arrFruitPerDay.some(f => f.fruit.toLowerCase() === fruit.toLowerCase())) {
+        // This will update the quantity in the object of the fruit entered.
         arrFruitPerDay.map((f) => {
           if (f.fruit.toLowerCase() === fruit.toLowerCase()) {
             f.quantity += qty
@@ -27,6 +35,7 @@
           return f
         })
       } else {
+        // Else we are going to create a new object and push this into the array
         arrFruitPerDay.push(
           { fruit: fruit, quantity: qty }
         )
