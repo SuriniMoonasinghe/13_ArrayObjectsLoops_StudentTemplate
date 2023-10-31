@@ -179,25 +179,25 @@ console.log('I am Connected')
 // ****** Part 25 ****** \\
 // Object
 const obj1 = {
-	fistName: 'Foo',
+	firstname: 'Foo',
 	lastName: 'Bar',
 };
 
 // // Selector Brackets
 // console.log(obj1['lastName']);
 // // Selector Dot Notation
-// console.log(obj1.fistName);
+// console.log(obj1.firstname);
 
 // ****** Part 26 ****** \\
 // Working with objects
 // const obj1 = {
-// 	fistName: 'Foo',
+// 	firstname: 'Foo',
 // 	lastName: 'Bar',
 //     age: 21
 // };
 
 // select
-// console.log(obj1.fistName);
+// console.log(obj1.firstname);
 
 // // Update
 // obj1.age = 31
@@ -218,11 +218,11 @@ const obj1 = {
 
 // arr.push(
 // 	{
-// 		fistName: 'Foo',
+// 		firstname: 'Foo',
 // 		lastName: 'Bar',
 // 	},
 // 	{
-// 		fistName: 'Julie',
+// 		firstname: 'Julie',
 // 		lastName: 'Jones',
 // 	},
 // 	[1, 2]
