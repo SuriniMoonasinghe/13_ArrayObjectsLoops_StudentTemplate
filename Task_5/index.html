@@ -8,7 +8,19 @@
   </head>
   <body>    
     <script>
-    
+      const chickenSoupRecipe = {
+        title: "Chicken Soup",
+        servings: 4,
+        ingredients: ['400g of chicken breast','4 stalks of celery','3 carrots','1 large potato','1 brown onion','5 cloves of garlic','Fresh rosemary','Fresh parsely', '500ml of chicken stock'],
+        directions: ['Dice the celery, carrots, potato and brown onion. Mince the garlic and prepare your stock', 'In a large pot saute your carrots, celery and onion until fragrant and soft.','Then add your stock, potato, garlic and rosemary and bring to a simmer','Once simmering, add your chicken breasts and cook at a low-medium heat for 10 minutes.','Remove and shred the chicken breast, return it to the pot and continue simmering for 30 minutes.','At this point you can serve up, but for extra flavour leave at a low heat for another 30 minutes and serve with a squeeze of fresh lemon.'],
+        letsCook: function(recipe){
+          console.log(`I'm hungry, let's cook ${recipe}`);
+        }
+      }
+
+     chickenSoupRecipe.letsCook("Chicken Soup");
+
+
     </script>
   </body>
 </html>

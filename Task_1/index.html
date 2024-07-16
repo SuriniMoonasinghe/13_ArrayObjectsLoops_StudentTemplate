@@ -7,8 +7,39 @@
     <title>Task 1</title>
   </head>
   <body>    
+
+  
+
     <script>
     
+    {/* pretask console log a loop 1-12  */}
+
+    for (let i = 0; i < 12; i++) {
+      console.log(i)
+
+    }
+
+   {/* Task 1: console log the 7 times table */}
+
+   for (let i=1; i<= 12 ; i++){
+    console.log(`${i} x 7 = ${i*7}`)
+   };
+
+  {/* Bonus: create a loop in a loop that runs through every times table. 
+  Here we can see that when a loop is nested, the outer loop will not increment until the inner loop satisfies its criteria. 
+  The process is this: first the outer loop will execute, then the inner loop with keep going until the condition is met.
+  We move back into the outer loop where it will increment and execute, before moving onto the inner loop.
+  This repeats until the outer loop has met its criteria. 
+  In this way, we can use loops within loops in creative ways. */}
+
+   for (let i=1; i<=12; i++){
+    console.log(`This is the ${i} times table.`)
+    for(let j=1; j<=12; j++){
+      console.log(`${i} x ${j} = ${i*j}`)
+     }
+    }
+   
+
     </script>
   </body>
 </html>
